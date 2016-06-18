@@ -1,0 +1,30 @@
+{
+    "name": "platformSpike",
+    "version": "0.0.0",
+    "description": "Self serve platfrom spike ",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com"
+    },
+    "main": "",
+    "dependencies": {
+        "bluebird": "3.3.4",
+        "mocha": "2.5.3",
+        "selenium-webdriver": "2.53.2"
+    },
+    "engines": {
+        "node": "0.12.x"
+    },
+    "scripts": {
+        "start": "node app/app.js",
+        "debug": "node node_modules/node-inspector/bin/inspector.js --no-preload --web-port=8088 & node --debug app/app.js",
+        "jshint": "node_modules/jshint/bin/jshint ./app",
+        "unit-test": "node specs/unit-tests/testRunner.js -t test",
+        "unit-test2": "node node_modules/jasmine/bin/jasmine.js specs/unit-tests/**/*-unitspec.js",
+        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & node --debug-brk node_modules/mocha/bin/mocha spec/login/login_spec.js"
+    },
+    "author": "teamOpex",
+    "devDependencies": {
+        "node-inspector": "0.12.7"
+    }
+}
