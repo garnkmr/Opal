@@ -15,7 +15,9 @@ test.describe('Ralph Says', function () {
 
     test.it('shows a quote container', function () {
         ralphSaysPage.visit()
-        ralphSaysPage.quoteContainerPresent()
+            .then(function () {
+                return ralphSaysPage.quoteContainerPresent();
+            })
             .then(function (present) {
                 assert.equal(present, true, "Quote container not displayed");
             });
