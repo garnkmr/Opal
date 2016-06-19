@@ -1,3 +1,5 @@
+// template file, configs to be removed
+
 {
     "name": "platformSpike",
     "version": "0.0.0",
@@ -21,7 +23,7 @@
         "jshint": "node_modules/jshint/bin/jshint ./app",
         "unit-test": "node specs/unit-tests/testRunner.js -t test",
         "unit-test2": "node node_modules/jasmine/bin/jasmine.js specs/unit-tests/**/*-unitspec.js",
-        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & node --debug-brk node_modules/mocha/bin/mocha spec/login/login_spec.js"
+        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & node --debug-brk node_modules/mocha/bin/mocha lib/spec/login/login_spec.js"
     },
     "author": "teamOpex",
     "devDependencies": {
