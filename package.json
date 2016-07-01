@@ -16,7 +16,8 @@
         "node": "0.12.x"
     },
     "scripts": {
-        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & mocha --debug-brk node_modules/mocha/bin/mocha lib/spec/login/login_spec.js"
+        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & mocha --debug-brk node_modules/mocha/bin/mocha test/login/login_spec.js",
+        "test_all": "mocha"
     },
     "author": "teamOpex",
     "devDependencies": {

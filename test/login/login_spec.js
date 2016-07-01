@@ -1,10 +1,10 @@
 var assert = require('assert'),
     test = require('selenium-webdriver/testing');
 
-var config = require('../../config.json'),
-    loginPage = require('../../pages/login').getInstance(),
-    basePage = require('../../pages/base').getInstance(),
-    scenarioPage = require('../../pages/scenarios').getInstance();
+var config = require('../../lib/config.json'),
+    loginPage = require('../../lib/pages/login').getInstance(),
+    basePage = require('../../lib/pages/base').getInstance(),
+    scenarioPage = require('../../lib/pages/scenarios').getInstance();
 
 const mochaTimeOut = config.timeout;
 
