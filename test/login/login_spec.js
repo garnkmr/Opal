@@ -1,4 +1,4 @@
-const mochaTimeOut = config.timeout;
+require('../helper.js');
 
 test.before(function () {
     console.log("start test -------------------------");
