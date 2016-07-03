@@ -1,14 +1,14 @@
 {
-    "name": "platformSpike",
+    "name": "platformAutomationSpike",
     "version": "0.0.0",
     "description": "Self serve platfrom spike ",
     "repository": {
         "type": "git",
-        "url": "https://github.com"
+        "url": "https://github.com/garnkmr/Opal"
     },
     "main": "",
     "dependencies": {
-        "bluebird": "3.3.4",
+        "chromedriver": "2.21.2",
         "mocha": "2.5.3",
         "selenium-webdriver": "2.53.2"
     },
