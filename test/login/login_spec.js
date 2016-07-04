@@ -6,8 +6,6 @@ test.before(function () {
 
 test.describe('Login Page', function () {
 
-    this.timeout(mochaTimeOut);
-
     test.it('open the login form', function () {
         loginPage.visit();
         loginPage.getTitle()
@@ -27,7 +25,6 @@ test.describe('Login Page', function () {
 });
 
 test.after(function () {
-    this.timeout(mochaTimeOut);
     basePage.logout()
         .then(function (logoutDone) {
             assert.equal(logoutDone, true, 'Not returned to login page after logout...')
