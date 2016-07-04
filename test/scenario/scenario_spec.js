@@ -13,10 +13,12 @@ test.describe('Scenario Page', function () {
 
     test.it('Create New Scenario', function () {
         scenarioPage.clickCreateNewScenario();
-        scenarioPage.createNewScenario(scenarioName, scenarioNote)
-            .then(function (toast) {
-                assert.equal(toast, true, 'Toast lost, unable to create scenario');
-            });
+        scenarioPage.createNewScenario(scenarioName, scenarioNote);
+        scenarioPage.verifyScenarioName(scenarioName);
+    });
+
+    test.it('Delete a Scenario', function () {
+        scenarioPage.deleteScenario(scenarioName);
     });
 });
 
