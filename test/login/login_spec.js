@@ -20,7 +20,6 @@ test.describe('Login Page', function () {
 
     test.it('login into application', function () {
         loginPage.loginDefault();
-        scenarioPage.addScenario();
     });
 });
 
