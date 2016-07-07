@@ -1,5 +1,10 @@
 var assert = require('assert'),
-    test = require('selenium-webdriver/testing');
+    test = require('selenium-webdriver/testing'),
+    chai = require('chai'),
+    chaiAsPromised = require('chai-as-promised'),
+    expect = chai.expect;
+
+chai.use(chaiAsPromised);
 
 var config = require('../lib/config.json');
 
@@ -10,6 +15,9 @@ var utils = require('../lib/utils').getInstance(),
 
 global.assert = assert;
 global.test = test;
+global.chai = chai;
+global.chaiAsPromised = chaiAsPromised;
+global.expect = expect;
 global.config = config;
 global.utils = utils;
 global.loginPage = loginPage;

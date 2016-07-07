@@ -1,26 +1,28 @@
 {
-    "name": "platformAutomationSpike",
-    "version": "0.0.0",
-    "description": "Self serve platfrom spike ",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/garnkmr/Opal"
-    },
-    "main": "",
-    "dependencies": {
-        "chromedriver": "2.21.2",
-        "mocha": "2.5.3",
-        "selenium-webdriver": "2.53.2"
-    },
-    "engines": {
-        "node": "0.12.x"
-    },
-    "scripts": {
-        "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & mocha --debug-brk node_modules/mocha/bin/mocha test/login/login_spec.js",
-        "test_all": "node node_modules/mocha/bin/mocha"
-    },
-    "author": "teamOpex",
-    "devDependencies": {
-        "node-inspector": "0.12.7"
-    }
+  "name": "platformAutomationSpike",
+  "version": "0.0.0",
+  "description": "Self serve platfrom spike ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garnkmr/Opal"
+  },
+  "main": "",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "chromedriver": "2.21.2",
+    "mocha": "2.5.3",
+    "selenium-webdriver": "2.53.2"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "scripts": {
+    "debug_ui": "node node_modules/node-inspector/bin/inspector.js --no-preload & mocha --debug-brk node_modules/mocha/bin/mocha test/login/login_spec.js",
+    "test_all": "node node_modules/mocha/bin/mocha"
+  },
+  "author": "teamOpex",
+  "devDependencies": {
+    "node-inspector": "0.12.7"
+  }
 }
